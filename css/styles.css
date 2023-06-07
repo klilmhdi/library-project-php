@@ -1,0 +1,439 @@
+
+:root{
+  --dark-color:#19283f;
+  --green-color: #33d1cc;
+  --red-color:#ff3150;
+  --yellow-color:#ffc400;
+  --section-color:#eff7fa;
+}
+.ico{
+  color: black;
+  transform: translate(-25px, 10px);}
+
+* {
+  padding: 0;
+  margin: 0px;
+  font-family: 'Varela Round', sans-serif;
+}
+ .main-title .ser{
+  margin-bottom:20px;
+  color: var(--dark-color);
+}
+.categories{
+  background-color: var(--section-color);
+}
+.row a{
+  text-decoration: none;
+}
+.dis{
+  padding-left: 50px;
+}
+.row .dis h4{
+  color: var(--dark-color);
+
+}
+.num{
+  padding-left: 20px;
+}
+pre {
+  font-size: 15px;
+  font-weight: 700;
+}
+ul{
+  display: block;
+}
+h1 {
+  font-weight: lighter;
+}
+.features{
+  background-color: var(--section-color);
+}
+/* Login Page */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+
+}
+
+header nav {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+header nav p {
+  color: #FFF;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 15px;
+}
+
+header nav ul li a {
+  color: #7c6b6b;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #FFF;
+}
+
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .log-In {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+
+.log-In form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-In form label 
+{
+margin-bottom: 10px;
+  margin-top: 10px;
+  color: #7c6b6b;
+}
+
+.log-In form input {
+  padding: 10px;
+}
+
+.log-In form .btn {
+  background-color: #5d8d3f;
+  color: #FFF;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+footer {
+  background-color: purple;
+  color: purple;
+  text-align: center;
+  padding: 20px;
+}
+
+footer div {
+  background-color: #ece8e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+
+}
+
+footer div ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+footer div ul li {
+  margin-left: 5px;
+}
+
+footer div ul li a img {
+  width: 15px;
+}
+
+/* Home Page */
+.first-sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/books.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.first-sec .search {
+  height: fit-content;
+  width: fit-content;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+/* Start Features */
+.features .icon-holder{
+  width: 300px;
+  height: 200px;
+  padding-top: 90px
+}
+.features .icon-holder svg{
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+.features .icon-holder .number{
+  font-size: 2rem;
+  color:var(--dark-color)
+}
+.features .icon-holder .icon{
+  color: var(--dark-color);
+
+}
+.features .feat h4{
+  color: var(--dark-color);
+  text-align: center;
+}
+.first-sec .search .fa {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+.first-sec .search input {
+  width: 500px;
+  max-width: 700px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid #CCC;
+  margin-top: 10px;
+  outline: none;
+  position: relative;
+}
+
+/* .first-sec .statistics {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 1fr 1fr 1fr;
+
+}
+
+.first-sec .statistics .card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.first-sec .statistics .card span {
+  padding: 5px;
+} */
+
+.first-sec h1 {
+  margin-top: 15px;
+}
+
+/* Info */
+.info {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Categories */
+.Categories-warrper {
+  background-color: #006FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 140px;
+  margin: auto;
+  padding: 10px;
+}
+
+.Categories-warrper .Categories {
+  display: flex;
+}
+
+.Categories-warrper .Categories .subject {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.Categories-warrper .Categories .subject button {
+  background-color: #FFF;
+  border: #CCC 1px solid;
+  padding: 20px 60px;
+}
+
+.lastest-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  ;
+}
+
+.lastest-books .books {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.lastest-books .books .book img {
+  width: 250px;
+  height: 300px;
+}
+
+.show {
+  display: block;
+}
+
+.lastest-books .books .book {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
+}
+
+.lastest-books .books .book .book-info {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lastest-books .books .book .book-info span {
+  padding-top: 5px;
+}
+
+.lastest-books .books .book .book-info a {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: #FFF;
+  background-color: rgb(29, 28, 28);
+  padding: 10px 0px;
+  overflow: hidden;
+  margin-top: 10px;
+  border: none;
+}
+
+/* book info */
+.bk-inf {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.bk-inf div {
+  display: flex;
+  flex-direction: row;
+}
+
+.bk-inf .sora img {
+  width: 300px;
+  height: 400px;
+}
+
+.bk-inf div .malomat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.bk-inf div .malomat hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bk-inf div .malomat button {
+  width: fit-content;
+  padding: 5px 15px;
+  border: none;
+  background-color: #5d8d3f;
+  color: #FFF;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.bk-inf div .malomat button i {
+  color: #FFF;
+  font-size: 10px;
+}
+
+/* cart */
+.cart {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.cart h2 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.cart table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cart table thead {
+  background-color: #000;
+  border: none;
+}
+
+.cart table thead td {
+  color: #FFF;
+  padding-right: 20px;
+  border: none;
+}
+
+.cart table tr td {
+  padding: 5px;
+}
+
+.cart table tbody tr td img {
+  width: 70px;
+}
+
+.cart table tr td button {
+  border: none;
+  background-color: transparent;
+}
+
+.cart table tr td button i {
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+}
+
+.cart table tfoot {
+  background-color: #000;
+  border: none;
+}
+
+.cart table tfoot tr td {
+  color: #FFF;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css.map">
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <p class="Logo">Books Store</p>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="./Cart.html">Cart</a></li>
+        <li><a href="./login.html">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="first-sec">
+      <h1>Search about any Book you need</h1>
+      <div class="search">
+        <input type="search" name="" id="">
+        <i class="fa fa-thin fa-magnifying-glass"></i>
+      </div>
+      <div class="statistics">
+        <div class="card">
+          <i class="fa-solid fa-book"></i>
+          <span>3</span>
+          <p>Books</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-users"></i>
+          <span>2</span>
+          <p>Authors</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-tags"></i>
+          <span>3</span>
+          <p>Categories</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info">
+    <h1>
+      About Our Library
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, explicabo voluptatum? Maiores dolorum iure
+      obcaecati. Maiores culpa sunt libero aut cum odio dignissimos molestias odit!</p>
+  </section>
+  <section class="Categories-warrper">
+    <h1>Expolore our latest Categories</h1>
+    <div class="Categories">
+      <div class="subject">
+        <button onclick="filterObjects('all')">all</button>
+      </div>
+      <div class="subject">
+        <button onclick="filterObjects('Action')">Action</button>
+      </div>
+      <div class="subject">
+        <button onclick="filterObjects('Drama')">Drama</button>
+      </div>
+      <div class="subject">
+        <button onclick="filterObjects('Romantic')">Romantic</button>
+      </div>
+    </div>
+  </section>
+  <section class="lastest-books">
+    <h1>Expolore our lastest books</h1>
+    <ul class="books">
+      <li class="book Action">
+        <img src="../images/انت لي.jpeg" alt="Photo">
+        <div class="book-info">
+          <span class="book-name">انت لي</span>
+          <span class="author-name">Esdasdasda</span>
+          <a href="./book-info.html">Read More</a>
+        </div>
+      </li>
+      <li class="book Drama">
+        <img src="../images/دع القلق.jpeg" alt="Photo">
+        <div class="book-info">
+          <span class="book-name">انت لي</span>
+          <span class="author-name">Esdasdasda</span>
+          <a href="./book-info.html">Read More</a>
+        </div>
+      </li>
+      <li class="book Romantic">
+        <img src="../images/استمتع بحياتك.jpeg" alt="Photo">
+        <div class="book-info">
+          <span class="book-name">انت لي</span>
+          <span class="author-name">Esdasdasda</span>
+          <a href="./book-info.html">Read More</a>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <p>All Copyrights reserver to <a href="#">Khaleel Mahdi </a>&copy; 2023</p>
+      <ul>
+        <li><a href="#"><img src="../images/Facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/Linkedin.jpeg" alt=""></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../JS/User-js.js"></script>
+</body>
+
+</html>

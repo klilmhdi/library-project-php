@@ -1,0 +1,283 @@
+
+
+* {
+  padding: 0;
+  margin: 0px;
+}
+
+html h1 {
+  font-family: sans-serif;
+  color: rgb(51, 48, 48);
+  font-weight: 500;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  max-height: 100%;
+}
+
+/* side bar */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f6f6;
+  height: 100%;
+  position: static;
+  width: 25%;
+  max-width: 250px;
+}
+
+.side-bar .team-name {
+  background-color: rgb(36, 30, 30);
+  color: blanchedalmond;
+  padding: 10px 20px;
+  font-size: 20px;
+  box-shadow: 0px 3px 5px gray;
+}
+
+.side-bar .subjects {
+  padding: 15px 20px;
+}
+
+.side-bar .subjects ul {
+  list-style: none;
+}
+
+.side-bar .subjects ul li {
+  padding: 10px;
+}
+
+.side-bar .subjects ul li a {
+  text-decoration: none;
+  color: rgb(94, 89, 89);
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.side-bar .subjects ul li .active {
+  color: blueviolet;
+}
+
+/* main */
+.main {
+  width: 100%;
+}
+
+.main .search-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  width: 100%;
+  box-shadow: 0px 3px 5px gray;
+}
+
+.main .search-bar form {
+  width: 90%;
+}
+
+.main .search-bar input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12.5px 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(61, 53, 53);
+  color: #f8f6f6;
+}
+
+.main .search-bar a {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 12px;
+  color: rgb(153, 143, 143);
+  text-decoration: none;
+  width: 10%;
+  background-color: rgb(46, 40, 40);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .content {
+  padding: 10px 20px;
+}
+
+.main .content div {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .content div a {
+  color: rgb(61, 53, 53);
+  text-decoration: none;
+  border: 1px solid rgb(61, 53, 53);
+  height: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.main .content div a:hover {
+  color: #FFF;
+  text-decoration: none;
+  box-shadow: 0px 5px 5px gray;
+  background-color: rgb(61, 53, 53);
+}
+
+.content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.content table thead {
+  background-color: #000;
+  border: none;
+}
+.content table thead td {
+  color: #FFF;
+  padding-right: 20px;
+  cursor: default;
+}
+.content table thead tr td {
+  padding: 7px 5px;
+  cursor: default;
+}
+.content table tbody tr td img {
+  width: 60px;
+}
+.content table tbody tr td button {
+  border: none;
+  background-color: transparent;
+}
+.content table tr td button i {
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+}
+.content table tbody tr td{
+  border: #96b5be 1px solid;
+}
+.content table tbody tr:hover {
+  background-color: #ccc;
+}
+.content form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.content form .image {
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content form .image label {
+  padding: 5px 5px 5px 0px;
+}
+
+.content form .image .upload-img {
+  background-color: #FFF;
+  padding: 0px;
+}
+
+.content form .image img {
+  max-width: 60px;
+}
+
+.content form label {
+  padding: 5px 5px 5px 0px;
+}
+
+::-webkit-file-upload-button {
+  color: #000;
+  background-color: #ccc;
+  border: none;
+  height: 100%;
+  padding: 12px 10px;
+}
+
+.content form input {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: 1px #CCC solid;
+  border-radius: 5px;
+}
+
+.content form textarea {
+  outline: none;
+  border: 1px #CCC solid;
+  border-radius: 5px;
+}
+
+.content form input:last-child {
+  width: 25%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: chocolate;
+  border: none;
+}
+
+/* Team */
+.Team{
+  margin:10px auto ;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  border: none;
+  box-shadow: 2px 2px 5px 5px gray;
+}
+.Team .member{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.Team .member img{
+  width: 25%;
+  max-width: 250px;
+}
+@media(max-width:770px) {
+  .Team .member h2{
+    font-size: 20px;
+  }
+  .side-bar .subjects {
+    padding: 15px 5px;
+  }
+}
+@media(max-width:500px) {
+  .Team .member h2{
+    font-size: 15px;
+  }
+}
+
+/* Style the dropdown */
+.dropdown select {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+/* Style the dropdown options */
+.dropdown select option {
+  padding: 8px;
+}
+
+/* Style the default placeholder text */
+.dropdown select option[disabled]:first-child {
+  color: #888;
+}
+
+.column {
+  flex-direction: column
+}
